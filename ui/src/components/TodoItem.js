@@ -6,6 +6,7 @@ const TodoItem = ({ todo }) => {
   const [delegateTo, setDelegateTo] = useState('');
   const dispatch = useDispatch();
 
+  console.log("todo id"  + todo.id +", value="+todo.text);
   return (
     <li className="list-group-item">
       <span
@@ -13,7 +14,7 @@ const TodoItem = ({ todo }) => {
           textDecoration: todo.completed ? 'line-through' : 'none',
         }}
       >
-        {todo.name}
+        {todo.text}
       </span>
       <button
         className="btn btn-sm btn-primary ms-2"
