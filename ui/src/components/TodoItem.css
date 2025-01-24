@@ -1,0 +1,27 @@
+* Alternating colors for the list items */
+.bg-light {
+  background-color: white;
+}
+
+.bg-blue-light {
+  background-color: #f0f8ff; /* Light blue */
+}
+
+/* Additional styling for buttons and inputs */
+.list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+input {
+  margin-left: 10px;
+  border-radius: 5px;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { toggleCompletion, delegateTodo } from '../features/todosSlice';
+import './TodoItem.css';
 
 const TodoItem = ({ todo }) => {
   const [delegateTo, setDelegateTo] = useState('');
@@ -8,13 +9,17 @@ const TodoItem = ({ todo }) => {
 
   console.log("todo id"  + todo.id +", value="+todo.text);
   return (
-    <li className="list-group-item">
+<li
+      className={`list-group-item ${
+        todo.id % 2 === 0 ? 'bg-light' : 'bg-blue-light'
+      }`}
+    >
       <span
         style={{
           textDecoration: todo.completed ? 'line-through' : 'none',
         }}
       >
-        {todo.text}
+         {todo.text}
       </span>
       <button
         className="btn btn-sm btn-primary ms-2"
