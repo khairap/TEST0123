@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Navbar styling */
+.navbar {
+  background-color: #007bff; /* Primary blue */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Even spacing */
+  align-items: center;
+}
+
+.navbar-item {
+  margin: 0;
+}
+
+.navbar-link {
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar-link:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: #ffffff;
+}
+
+.navbar-link:active {
+  background-color: #004080; /* Even darker blue on click */
+}
