@@ -25,3 +25,10 @@ input {
   margin-left: 10px;
   border-radius: 5px;
 }
+.list-group-item:nth-child(even) {
+  background-color: #f0f8ff; /* Light blue */
+}
+
+.list-group-item:nth-child(odd) {
+  background-color: white; /* White */
+}

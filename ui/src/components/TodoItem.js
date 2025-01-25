@@ -9,11 +9,9 @@ const TodoItem = ({ todo }) => {
 
   console.log("todo id"  + todo.id +", value="+todo.text);
   return (
-<li
-      className={`list-group-item ${
-        todo.id % 2 === 0 ? 'bg-light' : 'bg-blue-light'
-      }`}
-    >
+
+<li key={todo.id} className="list-group-item">
+
       <span
         style={{
           textDecoration: todo.completed ? 'line-through' : 'none',
